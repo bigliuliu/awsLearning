@@ -68,6 +68,8 @@
     * Route53,AWS WAF, AWS Global Accelerator [加速器]
 ## Health Checks
 
+When you enable ELB Health Checks, your ELB won't send traffic to unhealthy (crashed [崩溃]) EC2 instances.
+
 * health checks are crucial [至关重要的] for load balancers
 * they enable the load balancer to know if instances it forwards [v. 发送] traffic to are available to reply to requests
 * the health check is done on a port and a route (/health is common)
